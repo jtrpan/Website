@@ -12,59 +12,38 @@ const ParticlesComponent = (props) => {
         // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
         // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
         return {
-            fpsLimit: 160,
-            detectRetina: true,
-            smooth: true,
-            background: {
+            fpsLimit: 160, detectRetina: true, smooth: true, background: {
                 color: "transparent", // this sets a background color for the canvas
-            },
-            fullScreen: {
+            }, fullScreen: {
                 enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
                 zIndex: 0, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
-            },
-            interactivity: {
+            }, interactivity: {
                 detect_on: "canvas", events: {
                     onhover: {
-                        enable: true,
-                        mode: "bubble"
-                    },
-                    onclick: {
-                        enable: true,
-                        mode: "repulse"
+                        enable: true, mode: "bubble"
+                    }, onclick: {
+                        enable: true, mode: "repulse"
                     }, resize: true,
                 }, modes: {
                     bubble: {
-                        distance: 200,
-                        duration: 2,
-                        size: 10,
-                        opacity: 0
-                    },
-                    repulse: {
-                        distance: 200,
-                        duration: 10
+                        distance: 200, duration: 2, size: 10, opacity: 0
+                    }, repulse: {
+                        distance: 200, duration: 10
                     },
                 },
             }, particles: {
                 number: {
                     value: 100,
-                },
-                links: {
+                }, links: {
                     enable: false, // enabling this will make particles linked together
                     distance: 200, // maximum distance for linking the particles
                 }, move: {
-                    enable: true,
-                    random: true,
-                    speed: {min: 1, max: 4},
-                    direction: "top",
-                    out_mode: "out"
+                    enable: true, random: true, speed: {min: 1, max: 4}, direction: "top", out_mode: "out"
                 }, opacity: {
                     value: {min: 0.3, max: 0.7}, // using a different opacity, to have some semitransparent effects
                 }, size: {
-                    value: {min: 1, max: 3},
-                    random: true,
-                    anim: {
-                        speed: 3,
-                        size_min: 0.3
+                    value: {min: 1, max: 3}, random: true, anim: {
+                        speed: 3, size_min: 0.3
                     }
                 },
             },

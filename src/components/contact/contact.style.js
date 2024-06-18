@@ -10,7 +10,7 @@ export const Heading = styled.h1`
   font-size: calc(10px + (64 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
   text-align: left;
   font-family: Lato;
-  color: #c0c3c4
+  color: #c0c3c4;
   pointer-events: none;
 }
 
@@ -22,7 +22,7 @@ export const Heading = styled.h1`
   font-size: calc(10px + (64 - 28) * ((100vw - 320px) / (1700 - 320))) !important;
   text-align: left;
   font-family: Lato;
-  color: #c0c3c4
+  color: #c0c3c4;
   pointer-events: none;
 }
 
